@@ -1,5 +1,3 @@
-#install.packages("fields")
-#install.packages("fda")
 library(fda)
 library(MASS)
 library(tictoc)
