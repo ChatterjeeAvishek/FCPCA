@@ -15,13 +15,11 @@ for (i in 1:100) {
   
   C_train=data.matrix(C_train)
   C_test=data.matrix(C_test)
-  
-  C_train=C_train[,-2]
-  C_test=C_test[,-2]
+    
   ntrain=nrow(C_train)
   ntest=nrow(C_test)
  
-  cr1=FCPCA(C_train, C_test,ClassInfo_column_no=1,nbasis_bspline=33,norder=6,No_fpca_projections=c(3,3,3,3,3))
+  cr1=FCPCA(C_train, C_test, ClassInfo_column_no=1, nbasis_bspline=33, norder=6, No_fpca_projections=c(3,3,3,3,3))
   classification_rate_array_fcpca[i]=cr1
   
 }
