@@ -6,10 +6,9 @@ FCPCA=function(Class_train, Class_test,ClassInfo_column_no,nbasis_bspline,norder
   #nbasis_bspline: No of basis elements you want to represent the functional data
   #norder: Smoothing Parameter (preferably fix it at 6 but it may depend on the problem)
   #No_fpca_projections: Vector containg number of eigenfunctions to use for subspace projections : example: c(1,1)
-  # The code is modified on 25/01/2021 : Author: Avishek Chatterjee mail id: ac17rs012@iiserkol.ac.in
+  #Author: Avishek Chatterjee mail id: ac17rs012@iiserkol.ac.in
   
-  # Finding total no of class presents in the training data set
-  
+  # Finding total no of class presents in the training data set  
   Class_lebels=unique(Class_train[,ClassInfo_column_no])
   No_of_classes=length(Class_lebels)
   No_of_element_per_class_train=0
@@ -20,7 +19,7 @@ FCPCA=function(Class_train, Class_test,ClassInfo_column_no,nbasis_bspline,norder
   Rng = c(1,Class_time_points);
   
   
-  #
+  
   Class_lebels_test=unique(Class_test[,ClassInfo_column_no])
   for (fi in 1:length(Class_lebels_test)) {
      if( length(which(Class_test[,ClassInfo_column_no]==fi))== 1){
