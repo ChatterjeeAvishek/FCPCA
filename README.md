@@ -10,7 +10,7 @@ The following three functions are attached in the repository:
 ### Required Packages: “fda”, “MASS”, “tictoc”
 
 ### Description: 
-The function FCPCA.R performs functional classwise principal component analysis. It uses the above mentioned two functions Gram_Schmidt_orthonormalization.R and functional_projection.R. The Gram_Schmidt_orthonormalization.R function takes the functional basis object as input and performs Gram Schmidt Orthonormalization process for functional data. The functional_projection.R function takes functional data matrix and the basis functions and projects the functional data with respect to the basis functions. Usage along with arguments of the FCPCA function is given below. Usage of the the function for a dataset (with 100 resampling experiment) is also given in the code named "FCPCA_use.R".
+The function FCPCA.R performs functional classwise principal component analysis. It uses the above mentioned two functions Gram_Schmidt_orthonormalization.R and functional_projection.R. The Gram_Schmidt_orthonormalization.R function takes the functional basis object as input and performs Gram Schmidt Orthonormalization process for functional data. The functional_projection.R function takes functional data matrix and the basis functions and projects the functional data with respect to the basis functions. Usage along with arguments of the FCPCA function is given below. Usage of the the function for a dataset (with 100 resampling) is also given in the code named "FCPCA_use.R".
 
 ### Use: 
 
